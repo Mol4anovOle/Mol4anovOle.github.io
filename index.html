@@ -6,15 +6,16 @@
   <title> Lesson2 Form  </title>
   <link href="style.css" rel="stylesheet" type="text/css"/>
   </head>
-  <h1>Personal Information </h1>
+  
     <body>
+        <h1>Personal Information </h1>
         <form class="field1" action="https://mate-academy-form-lesson.herokuapp.com/create-application" method="post">
     <fieldset>
     <legend>Personal Information</legend>
       <p>Surname:<input name="surname" required type="text"> </p>
       <p>Name:<input name="Name" type="text"></p>
       <p>How old are You?:<input name="How old are You" type="number"></p>
-      <p>Full date of birth:<input name="Full date of birth" type="date" value="mm/dd/yyyy"></p>
+      <p>Full date of birth:<input name="Full date of birth" type="date" value=""></p>
       <div>I accept the terms of agreement <input type="radio" name="agree" value=""></div>    
     </fieldset>
     <fieldset>
@@ -28,9 +29,9 @@
       <div><input type="radio" name="Yes" value="">Yes</div><br/>
           <div><input type="radio" name="Yes" value="">Not</div></div>
       <a>What is Your favorite color?:</a><br/>
-       <input type="color" name="black" value="black">
+       <input type="color" name="black" value="">
       <p>What time do You go to bed?: <br/>
-      <input name="go to bed" type="time" value="--:-- --"></p>
+      <input name="go to bed" type="time" value=""></p>
       <a>What Your favorite brand of cars?:</a><br/>
       <select name="cars" size="3" multiple>
 	    <option>Audi</option>
