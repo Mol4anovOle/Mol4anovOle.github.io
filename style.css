@@ -1,0 +1,14 @@
+fieldset {
+  /* Just to center the form on the page */
+  margin left: 0 auto;
+    margin-top: inherit;
+  width: 400px;
+  /* To see the outline of the form */
+  padding: 1em;
+  border: 2px solid #CCC;
+  font-size: 16px;
+}
+input:hover {
+    background-color: beige
+        border:1px solid black;
+}

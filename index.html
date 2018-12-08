@@ -1,1 +1,57 @@
-Hello World test
+<!DOCTYPE html>
+<html  lang="en-US">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name = viewport content = "width = device-width, initial-scale = 1">
+  <title> Lesson2 Form  </title>
+  <link href="style.css" rel="stylesheet" type="text/css"/>
+  </head>
+  <h1>Personal Information </h1>
+    <body>
+        <form class="field1" action="https://mate-academy-form-lesson.herokuapp.com/create-application" method="post">
+    <fieldset>
+    <legend>Personal Information</legend>
+      <p>Surname:<input name="surname" required type="text"> </p>
+      <p>Name:<input name="Name" type="text"></p>
+      <p>How old are You?:<input name="How old are You" type="number"></p>
+      <p>Full date of birth:<input name="Full date of birth" type="date" value="mm/dd/yyyy"></p>
+      <div>I accept the terms of agreement <input type="radio" name="agree" value=""></div>    
+    </fieldset>
+    <fieldset>
+      <legend>Ragistration</legend>
+      <p>E-mail:<input name="E-mail" type="email"> </p>
+      <p>Password:<input name="Password" type="password"></p>
+    </fieldset>        
+    <fieldset>
+      <legend>An intresting fact about You</legend>
+      <div>Do you like cats?:<br/>
+      <div><input type="radio" name="Yes" value="">Yes</div><br/>
+          <div><input type="radio" name="Yes" value="">Not</div></div>
+      <a>What is Your favorite color?:</a><br/>
+       <input type="color" name="black" value="black">
+      <p>What time do You go to bed?: <br/>
+      <input name="go to bed" type="time" value="--:-- --"></p>
+      <a>What Your favorite brand of cars?:</a><br/>
+      <select name="cars" size="3" multiple>
+	    <option>Audi</option>
+	    <option>BMW</option>
+	    <option>Lada</option>
+	  </select>
+         <p>How do You rate Our work?<br/>
+         <input type="range" min="0" max="10" step="1" value="50"> </p>
+      </fieldset>
+    	<fieldset>
+        <legend>Your comments</legend>
+        <p><textarea name="comment"></textarea></p>
+       </fieldset>
+         <p><input type="submit" value="Submit"></p>
+</form>
+
+                     
+                    
+  
+                <script src="script.js"></script>
+    </body>
+
+
+</html>
