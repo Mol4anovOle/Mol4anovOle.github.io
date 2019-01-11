@@ -1,0 +1,193 @@
+.pricing {
+  margin: 0 auto;
+  min-height: 1200px;
+  max-width: 4000px;
+  background: rgba(255,228,0,0.6) url("../img/room.jpg") no-repeat;
+  background-blend-mode: overlay;
+  background-size: 100% 100%;
+
+  @media screen and (max-width: 1444px){
+    background-image: none;
+  }
+
+  .section-title {
+    @media screen and (max-width: 576px){
+      font-size: 0.8em;
+    }
+    &-heading {
+      opacity: 0.4;
+      @media screen and (max-width: 576px){
+        opacity: 0.6;
+      }
+    }
+    &-info {
+      color: black
+    }
+  }
+
+  &-types {
+    margin-top: 180px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    flex-direction: row;
+
+    @media screen and (max-width: 1444px){
+      justify-content: center;
+      margin-top: 120px;
+    }
+    @media screen and (max-width: 856px){
+      margin-top: 50px;
+    }
+
+    &-item {
+      min-height: 740px;
+      min-width: 360px;
+      text-align: center;
+      transition: 0.6s;
+      position: relative;
+      @media screen and (max-width: 1444px){
+        margin: 25px;
+      }
+      @media screen and (max-width: 856px){
+        width: 540px;
+        margin-top: 30px;
+      }
+      @media screen and (max-width: 396px){
+        min-width: 240px;
+        font-size: 0.6em;
+        min-height: 540px;
+      }
+
+      &.popular-type::before{
+        content: "Most Popular";
+        position: absolute;
+        height: 40px;
+        font-family: $paragraph-font;
+        color: $title-color;
+        top: -5.5%;
+        line-height: 2.5;
+        display: block;
+        width: 100%;
+        background-color: #e6e6e6;
+      }
+      &-top {
+        padding: 25px 0;
+        min-height: 210px;
+        width: 100%;
+        @media screen and (max-width: 396px){
+          min-height: 160px;
+        }
+
+        .pricing-types-item:nth-child(1) & {
+          background: url("../img/price-img1.jpg") no-repeat;
+          background-size: 100% 100%;
+        }
+        .pricing-types-item:nth-child(2) & {
+          background: url("../img/price-img2.jpg") no-repeat;
+          background-size: 100% 100%;
+        }
+        .pricing-types-item:nth-child(3) & {
+          background: url("../img/price-img3.jpg") no-repeat;
+          background-size: 100% 100%;
+        }
+
+        .pricing-title {
+          font-size: 0.9375em;
+          font-weight: 600;
+          font-family: 'Poppins', sans-serif;
+          color: #fff;
+          letter-spacing: 2px;
+        }
+        .price-title {
+          margin-top: 35px;
+          margin-bottom: 45px;
+          font-size: 3.75em;
+          color: #fff;
+          font-family: $main-font;
+          font-weight: 700;
+          display: flex;
+          justify-content: center;
+          line-height: 0.7;
+
+          &::before {
+            display: inline-block;
+            content: "$";
+            font-family: $main-font;
+            font-weight: 400;
+            color: #fff;
+            font-size: 30px;
+            margin-right: 5px;
+          }
+          &::after {
+            content: "/ MONTH";
+            font-family: $paragraph-font;
+            color: #fff;
+            font-size: 13px;
+            align-self: flex-end;
+          }
+        }
+        .pricing-bonus-text {
+          color: #dbdbdb;
+          font-size: 13px;
+          font-family: $paragraph-font;
+        }
+      }
+      &-features {
+        padding-top: 65px;
+        background-color: #fff;
+        min-height: 480px;
+        @media screen and (max-width: 396px){
+          min-height: 320px;
+          font-size: 0.8em;
+          padding-top: 10px;
+        }
+
+        p {
+          min-height: 60px;
+          padding: 20px 0;
+          color: $paragraph-color;
+          font-size: 0.875em;
+          font-family: $paragraph-font;
+          border-bottom: 1px solid #f0f0f0;
+          @media screen and (max-width: 396px){
+            min-height: 20px;
+          }
+        }
+
+        .pricing-features-item {
+          &::before {
+            display: inline-block;
+            content: ">";
+            font-family: $paragraph-font;
+            color: $paragraph-color;
+            font-size: 14px;
+            margin-right: 7px;
+          }
+        }
+      }
+      &-bottom {
+        margin-top: 4px;
+
+        .get-now-btn {
+          display: block;
+          font-family: $main-font;
+          font-size: 14px;
+          color: $title-color;
+          padding: 15px 0;
+          width: 100%;
+          background-color: #fff;
+          transition: 0.3s;
+          &:hover {
+            background-color: #d2d2d2;
+          }
+        }
+      }
+
+      &:hover {
+        transform: scale(0.97);
+      }
+    }
+  }
+}
+

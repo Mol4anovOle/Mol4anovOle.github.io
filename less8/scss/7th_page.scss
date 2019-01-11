@@ -1,0 +1,120 @@
+.service {
+  padding-bottom: 100px;
+  position: relative;
+  overflow: hidden;
+  @media screen and (max-width: 768px){
+    padding-bottom: 0;
+    border-bottom: 2px solid #2e2d2d;
+    background-color: rgba(255,228,0,0.6);
+  }
+
+  .big-ring {
+    width: 51.5em;
+    height: 51.5em;
+    border-width: 10.5em;
+    top: 37%;
+    left: -15%;
+    z-index: 0;
+    opacity: 0.7;
+    @media screen and (max-width: 1768px){
+      width: 41.2em;
+      height: 41.2em;
+      left: -12%;
+      top: 55%;
+    }
+    @media screen and (max-width: 1366px){
+      opacity: 0.2;
+    }
+    @media screen and (max-width: 768px){
+      display: none;
+    }
+  }
+  .service-img {
+    display: block;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    max-width: 936px;
+    height: auto;
+    @media screen and (max-width: 1768px){
+      width: 748px;
+      height: auto;
+    }
+    @media screen and (max-width: 1366px){
+      opacity: 0.1;
+    }
+    @media screen and (max-width: 768px){
+      display: none;
+    }
+  }
+  .container {
+    padding-left: 580px;
+    @media screen and (max-width: 1366px){
+      padding: 0;
+    }
+  }
+
+  .section-title {
+    justify-content: flex-start;
+    @media screen and (max-width: 1366px){
+      justify-content: center;
+    }
+  }
+
+  &-grid {
+    margin-top: 145px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(277px, 1fr));
+    @media screen and (max-width: 1366px){
+      margin-top: 50px;
+    }
+    @media screen and (max-width: 1100px){
+      grid-template-columns: repeat(auto-fill, minmax(390px, 1fr));
+    }
+    &-item {
+      padding: 45px 32px 25px 32px;
+      text-align: center;
+      @media screen and (max-width: 768px){
+        border-bottom: 1px solid #e2e3e4;
+      }
+
+      &:nth-child(2n+1) {
+        border-right: 1px solid #e6e6e6;
+        @media screen and (min-width: 769px) and (max-width: 1366px){
+          border: none;
+        }
+      }
+      &:nth-child(3) {
+        border-top: 1px solid #e6e6e6;
+        @media screen and (min-width: 769px) and (max-width: 1366px){
+          border: none;
+        }
+      }
+      &:nth-child(4) {
+        border-top: 1px solid #e6e6e6;
+        @media screen and (min-width: 769px) and(max-width: 1366px){
+          border: none;
+        }
+      }
+
+
+      i {
+        display: block;
+        min-height: 36px;
+        font-size: 48px;
+      }
+      h4 {
+        padding: 35px 0;
+        font-size: 18px;
+        font-family: $main-font;
+        font-weight: 700;
+      }
+      p {
+        color: $paragraph-color;
+        font-family: $paragraph-font;
+        line-height: 1.625;
+      }
+    }
+  }
+}

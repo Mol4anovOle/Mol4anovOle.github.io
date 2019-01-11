@@ -1,0 +1,210 @@
+.about {
+  font-size: 1em;
+  position: relative;
+  overflow: hidden;
+  padding-bottom: 145px;
+  margin: 0 auto;
+
+  .section-title {
+    @media screen and (max-width: 576px) {
+      font-size: 0.6em;
+    }
+  }
+  .big-ring {
+    left: -28%;
+    top: 11%;
+    width: 63.125em;
+    height: 63.125em;
+    border-width: 13.5em;
+    @media screen and (max-width: 1024px) {
+      opacity: 0.4;
+      width: 63.125em*0.8;
+      height: 63.125em*0.8;
+    }
+    @media screen and (max-width: 768px) {
+      display: none;
+    }
+  }
+
+  &-description {
+    margin: 25px auto;
+    width: 82%;
+    text-align: center;
+  }
+
+  &-buttons {
+    text-align: center;
+    padding: 45px 0;
+    &-btn {
+      min-width: 200px;
+      padding: 22px 0;
+      margin-right: 20px;
+      font-size: 18px;
+      @media screen and (max-width: 576px) {
+        margin-top: 15px;
+      }
+      &:nth-child(2n+1){
+        background-color: #000;
+        color: $main-color;
+        border: none;
+        &:hover {
+          color: #000;
+          background-color: $main-color;
+        }
+      }
+      &:nth-child(2n) {
+        background-color: $main-color;
+        color: #000;
+        border: none;
+        &:hover {
+          color: $main-color;
+          background-color: #000;
+        }
+      }
+    }
+  }
+
+  &-services {
+    display: flex;
+    justify-content: space-between;
+    z-index: 3;
+    @media screen and (max-width: 1176px) {
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: row;
+      justify-content: space-around;
+    }
+    &-item {
+      width: 360px;
+      text-align: center;
+      background-color: #212121;
+      min-height: 400px;
+      transition: 0.3s ease;
+      position: relative;
+      overflow: hidden;
+      @media screen and (max-width: 1176px){
+        margin-top: 45px;
+      }
+      &:hover .small-ring {
+        opacity: 0.15;
+      }
+      .small-ring {
+        opacity: 0;
+        transition: 0.1s;
+        z-index: 1;
+      }
+      &-ico {
+        display: block;
+        margin-top: 90px;
+        margin-bottom: 35px;
+        font-size: 7.875em;
+        color: $main-color;
+        transition: 0.2s ease;
+        @at-root .about-services-item:hover & {
+          margin-top: 35px;
+          color: #fff;
+        }
+      }
+      &-title {
+        color: #fff;
+        font-size: 1.5em;
+        font-family: $main-font;
+        font-weight: 700;
+        margin-bottom: 25px;
+        z-index: 3;
+        opacity: 1;
+      }
+      &-text {
+        width: 95%;
+        margin: 0 auto;
+        display: none;
+        color: #fff;
+        font-family: $paragraph-font;
+        line-height: 1.5;
+        transition: 0.3s ease;
+        opacity: 1;
+        @at-root .about-services-item:hover & {
+          display: block;
+        }
+      }
+
+      &:hover {
+        background-color: $main-color;
+        color: #fff;
+      }
+    }
+  }
+
+  &-numbers {
+    text-align: center;
+    @media screen and (max-width: 1024px){
+      width: 85%;
+      margin: 0 auto;
+    }
+    @media screen and (max-width: 768px){
+      font-size: 0.7em;
+    }
+    @media screen and (max-width: 575px){
+      font-size: 1em;
+    }
+    &-title {
+      margin-top: 180px;
+      margin-bottom: 120px;
+      color: $title-color;
+      font-family: $main-font;
+      font-weight: 700;
+      font-size: 2.25em;
+      @media screen and (max-width: 768px){
+        margin-top: 80px;
+        margin-bottom: 40px;
+      }
+      @media screen and (max-width: 575px){
+        font-size: 1.575em;
+      }
+    }
+
+    &-list {
+      display: flex;
+      justify-content: space-between;
+      @media screen and (min-width: 1025px) and (max-width: 1280px){
+        justify-content: space-around;
+      }
+      @media screen and (max-width: 576px){
+        flex-wrap: wrap;
+        justify-content: space-around;
+      }
+
+      &-item {
+        @media screen and (max-width: 576px){
+          padding: 20px 15px;
+        }
+        text-align: left;
+        .number {
+          font-family: $main-font;
+          font-size: 2.875em;
+          font-weight: 700;
+          color: $title-color;
+        }
+
+        .number-title {
+          font-size: 0.875em;
+          color: #757575;
+          font-family: $paragraph-font;
+
+        }
+      }
+    }
+  }
+
+  &-img {
+    position: absolute;
+    right: 0;
+    bottom: 23%;
+    z-index: -1;
+    @media screen and (max-width: 1024px) {
+      opacity: 0.45;
+      width: 418px*0.7;
+      height: auto;
+    }
+  }
+}

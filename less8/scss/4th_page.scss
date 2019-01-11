@@ -1,0 +1,92 @@
+.about-second {
+  margin: 0 auto;
+  padding-top: 160px;
+  min-height: 652px;
+  max-width: 4000px;
+  background: url("../img/office.jpg") no-repeat;
+  background-size: 100% 100%;
+  overflow: hidden;
+
+  @media screen and (max-width: 1280px){
+    min-height: 576px;
+  }
+  @media screen and (max-width: 1024px){
+    min-height: 480px;
+    padding-top: 60px;
+  }
+  @media screen and (max-width: 768px){
+    min-height: 320px;
+    padding-top: 15px;
+    padding-bottom: 20px;
+  }
+
+  .container {
+    text-align: center;
+    color: #fff;
+    position: relative;
+
+    .big-ring {
+      position: absolute;
+      top: -100px;
+      left: 66%;
+      opacity: 0.15;
+      width: 560px;
+      height: 550px;
+      border-width: 7.5em;
+      z-index: 3;
+    }
+  }
+
+  &-logo {
+    display: inline-block;
+
+    img {
+      height: auto;
+      width: 230px;
+    }
+  }
+
+  &-title {
+    font-family: $main-font;
+    font-weight: 700;
+    font-size: 2.75em;
+    margin-top: 60px;
+    margin-bottom: 35px;
+    @media screen and (max-width: 768px){
+      margin-top: 25px;
+      font-size: 1.8em;
+      margin-bottom: 15px;
+    }
+  }
+
+  &-text {
+    line-height: 1.625;
+    font-family: $paragraph-font;
+    margin: 0 auto;
+    width: 65%;
+    padding-bottom: 65px;
+    @media screen and (max-width: 768px){
+      padding-bottom: 20px;
+      width: 85%;
+    }
+  }
+
+  &-buttons {
+    .square-button {
+      padding: 22px 30px;
+      min-width: 225px;
+      color: #fff;
+      border-color: #fff;
+      margin-right: 20px;
+      @media screen and (max-width: 768px){
+        padding: 14px 10px;
+        min-width: 140px;
+      }
+      &:hover {
+        color: #000;
+        border-color: $main-color;
+      }
+    }
+  }
+}
+

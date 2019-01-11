@@ -1,0 +1,137 @@
+.news {
+  padding-bottom: 155px;
+  .section-title {
+    @media screen and (max-width: 640px){
+      font-size: 0.7em;
+      padding-top: 35px;
+    }
+  }
+
+  @media screen and (max-width: 920px){
+    padding-bottom: 50px;
+  }
+
+  &-grid {
+    margin-top: 115px;
+    display: flex;
+    justify-content: space-between;
+    @media screen and (max-width: 1176px){
+      flex-wrap: wrap;
+      flex-direction: row;
+      margin-top: 60px;
+      justify-content: center;
+    }
+
+    &-post {
+      width: 24%;
+      text-align: center;
+      @media screen and (max-width: 1176px){
+        margin: 25px 20px;
+        width: 26%;
+      }
+      @media screen and (max-width: 920px){
+        width: 40%;
+      }
+      @media screen and (max-width: 640px){
+        width: 100%;
+        display: flex;
+        min-height: 220px;
+        text-align: left;
+        border-bottom: 1px solid #4e5a62;
+      }
+      @media screen and (max-width: 480px){
+        flex-wrap: wrap;
+        flex-direction: row;
+      }
+
+      &-img {
+        position: relative;
+        @media screen and (max-width: 640px){
+          width: 100%;
+        }
+        img {
+          width: 100%;
+          height: auto;
+        }
+        .post-date {
+          display: block;
+          position: absolute;
+          bottom: -10%;
+          right: 25%;
+          font-family: $main-font;
+          color: $title-color;
+          font-size: 12px;
+          font-weight: 700;
+          border-radius: 15px;
+          padding: 10px;
+          width: 142px;
+          background-color: #f9f9f9;
+          @media screen and (max-width: 640px){
+            position: static;
+            margin: 0 auto;
+            text-align: center
+          }
+        }
+      }
+      &-content {
+        @media screen and (max-width: 640px){
+          margin-left: 20px;
+          margin-top: 10px;
+        }
+        .post-title {
+          padding-top: 40px;
+          font-family: $main-font;
+          color: $title-color;
+          font-size: 18px;
+          font-weight: 700;
+          line-height: 1.2;
+          @media screen and (max-width: 640px){
+            padding-top: 0;
+            width: 80%;
+          }
+        }
+        .post-activity {
+          font-family: 'Open Sans', sans-serif;
+          font-size: 10px;
+          color: $paragraph-color;
+          padding: 10px 0;
+          line-height: 2.5;
+        }
+        .post-text {
+          width: 80%;
+          margin: 0 auto;
+          text-align: left;
+          color: $paragraph-color;
+          font-family: $paragraph-font;
+          font-size: 14px;
+          line-height: 1.7;
+          @media screen and (max-width: 640px){
+            width: 100%;
+          }
+        }
+        .readmore-btn {
+          margin-top: 25px;
+          display: inline-block;
+          background-color: #f9f9f9;
+          color: $title-color;
+          font-family: $main-font;
+          font-size: 0.625em;
+          border: 1px solid #fff;
+          border-radius: 13px;
+          min-width: 98px;
+          padding: 9px 0;
+          transition: 0.4s ease;
+          @media screen and (max-width: 640px){
+            margin: 10px 0;
+            text-align: center;
+          }
+          &:hover {
+            background-color: $main-color;
+            border-color: #000;
+            color: #010000;
+          }
+        }
+      }
+    }
+  }
+}

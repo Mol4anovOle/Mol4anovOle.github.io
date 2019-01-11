@@ -1,0 +1,110 @@
+.features {
+  .section-title {
+    @media screen and (max-width: 1024px){
+      font-size: 0.7em;
+      margin-bottom: 40px;
+    }
+    @media screen and (max-width: 576px){
+      font-size: 0.5em;
+    }
+    &-info {
+      font-family: 'Poppins', sans-serif;
+      font-weight: 600;
+      font-size: 1.875em;
+    }
+  }
+  &-grid {
+    margin-top: 135px;
+    margin-bottom: 150px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    grid-gap: 70px 10px;
+
+    @media screen and (max-width: 1024px){
+      width: 90%;
+      margin: 0 auto;
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: row;
+      justify-content: space-around;
+    }
+    @media screen and (max-width: 860px){
+      justify-content: center;
+    }
+
+    &-item {
+      position: relative;
+      padding-left: 85px;
+      @media screen and (max-width: 1024px){
+        width: 45%;
+        margin: 30px 0;
+      }
+      @media screen and (max-width: 860px){
+        width: 80%;
+      }
+      @media screen and (max-width: 576px){
+        width: 100%;
+      }
+      &:nth-child(1) i {
+        background-color: #73c8b7;
+      }
+      &:nth-child(2) i {
+        background-color: #31aae2;
+      }
+      &:nth-child(3) i {
+        background-color: #c183d6;
+      }
+      &:nth-child(4) i {
+        background-color: #eb768c;
+      }
+      &:nth-child(5) i {
+        background-color: #73c8b7;
+      }
+      &:nth-child(6) i {
+        background-color: #31aae2;
+      }
+      &:nth-child(7) i {
+        background-color: #ebd175;
+      }
+      &:nth-child(8) i {
+        background-color: #718ac7;
+      }
+      &:nth-child(9) i {
+        background-color: #4be3a4;
+      }
+      i {
+        display: inline;
+        position: absolute;
+        left: 0;
+        font-size: 1.75em;
+        border-radius: 50%;
+        width: 65px;
+        height: 65px;
+        line-height: 2.4;
+        text-align: center;
+        color: #fff;
+        @media screen and (max-width: 576px){
+          font-size: 1em;
+          width: 42px;
+          height: 42px;
+          left: 6%;
+          line-height: 2.8;
+        }
+      }
+      &-title {
+        font-family: $main-font;
+        color: $title-color;
+        font-size: 1.125em;
+        font-weight: 700;
+        padding-bottom: 25px;
+      }
+      &-text {
+        font-family: $paragraph-font;
+        color: $paragraph-color;
+        font-size: 1em;
+        line-height: 1.625;
+      }
+    }
+  }
+}
