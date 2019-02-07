@@ -1,0 +1,21 @@
+.App{
+  text-align: center;
+}
+input{
+  border-radius: 5px;
+  border:2px solid aqua;
+}
+.wl{
+  border: 1px solid blue;
+  padding: 12px;
+  size:42px;
+  text-align: center;
+  
+}
+
+.wish:nth-child(odd){
+  background-color: grey;
+}
+:hover.wish{
+  border: 3px solid black;
+}
