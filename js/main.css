@@ -1,0 +1,63 @@
+.container {
+  width: 500px;
+  background: silver;
+}
+fieldset {
+  display: flex;
+  color: white;
+  border: none;
+  padding: 10px;
+}
+.form__title {
+  color: white;
+  background: aqua;
+  text-align: center;
+  font-size: 40px;
+  margin-bottom: 30px;
+}
+
+input {
+  padding: 3px;
+  margin: 20px;
+}
+select {
+  width: 300px;
+  height: 30px;
+  margin: 20px;
+}
+option {
+  background: grey;
+}
+.form__button {
+  width: 300px;
+  height: 40px;
+  overflow: hidden;
+  margin-top: 20px;
+}
+input {
+  width: 300px;
+  min-height: 30px;
+  position: relative;
+}
+div.gender input {
+  width: auto;
+}
+.gender {
+  text-align: center;
+  width: 300px;
+  margin-top: 10px;
+  margin: 20px;
+}
+#notes {
+  height: 100px;
+  min-width: 300px;
+  max-width: 300px;
+  background: transparent;
+  color: white;
+}
+.error {
+  position: absolute;
+  color: red;
+  margin-top: 40px;
+  font-weight: 900;
+}
