@@ -1,0 +1,22 @@
+input {
+  margin: 40px auto 0 20px;
+  width: 500px;
+  height: 40px;
+  border: 2px solid blue;
+}
+ul {
+  margin: 0 auto 0 20px;
+  padding-left: 20px;
+  width: 480px;
+}
+li {
+  background-color: silver;
+}
+li:nth-last-of-type(odd) {
+  background-color: azure;
+}
+p {
+  padding-left: 20px;
+  font-size: 15px;
+}
+
