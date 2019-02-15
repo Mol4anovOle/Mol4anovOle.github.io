@@ -1,0 +1,11 @@
+li:nth-child(odd) {
+  background-color: silver;
+}
+.buttons {
+  display: flex;
+  align-items: center;
+}
+button:focus {
+  color: #9555af;
+  border-color: red;
+}
