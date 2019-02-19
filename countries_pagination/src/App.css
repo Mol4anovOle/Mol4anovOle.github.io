@@ -1,0 +1,26 @@
+button {
+  width: auto;
+  margin: 0 4px;
+  border-radius: 3px;
+  border: 2px solid black;
+  transition: 0.5s;
+}
+
+.active-btn {
+  border-color: red;
+}
+
+button:hover {
+  background-color: red;
+}
+
+.App {
+  text-align: center;
+}
+li {
+  background-color: aqua;
+  list-style-type: none;
+}
+li:nth-child(odd) {
+  background-color: grey;
+}
