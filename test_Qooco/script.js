@@ -13,9 +13,35 @@ for (var i = 0; i < qualSq; i++) {
 let elemscollection = document.getElementsByClassName("circles");
 
 setInterval(function() {
-  for (let i = 0; i < elemscollection.length; ++i) {
+  for (let i = 0; i < elemscollection.length; i = i + 3) {
     elemscollection[i].style.background = "red";
-    elemscollection[i + 1].style.background = "yellow";
-    elemscollection[i + 2].style.background = "blue";
+  }
+  for (let j = 1; j < elemscollection.length; j = j + 3) {
+    elemscollection[j].style.background = "yellow";
+  }
+  for (let k = 2; k < elemscollection.length; k = k + 3) {
+    elemscollection[k].style.background = "blue";
   }
 }, 1000);
+setInterval(function() {
+  for (let i = 0; i < elemscollection.length; i = i + 3) {
+    elemscollection[i].style.background = "yellow";
+  }
+  for (let j = 1; j < elemscollection.length; j = j + 3) {
+    elemscollection[j].style.background = "blue";
+  }
+  for (let k = 2; k < elemscollection.length; k = k + 3) {
+    elemscollection[k].style.background = "red";
+  }
+}, 1100);
+setInterval(function() {
+  for (let i = 0; i < elemscollection.length; i = i + 3) {
+    elemscollection[i].style.background = "blue";
+  }
+  for (let j = 1; j < elemscollection2.length; j = j + 3) {
+    elemscollection[j].style.background = "red";
+  }
+  for (let k = 2; k < elemscollection.length; k = k + 3) {
+    elemscollection[k].style.background = "yellow";
+  }
+}, 1200);
