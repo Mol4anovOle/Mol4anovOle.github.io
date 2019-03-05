@@ -4,7 +4,7 @@
 
 ## It's about _form_ **page** in **_Qooco_**
 
-You can see this [link](https://mol4anovole.test-JS/index.html) on my Github page
+You can see this [link](https://mol4anovole.github.io/test_Qooco/index.html) on my Github page
 
 ---
 
