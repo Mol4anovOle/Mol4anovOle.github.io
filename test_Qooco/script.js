@@ -1,12 +1,3 @@
-let a = 100;
-let b = 150;
-let perSq = b * a;
-let padding = 20;
-let radius = 40;
-let qualSq = Math.ceil(perSq / (radius + padding));
-
-var container = document.getElementById("container");
-
 var num = 21; // Кол-во ламп
 var wrap = 400; // размер полотна
 var radius = wrap / 2.5; // Радиус нашего круга
