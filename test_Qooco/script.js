@@ -7,41 +7,43 @@ let qualSq = Math.ceil(perSq / (radius + padding));
 
 var container = document.getElementById("container");
 
-for (var i = 0; i < qualSq; i++) {
+var num = 21; // Кол-во ламп
+var wrap = 400; // размер полотна
+var radius = wrap / 2.5; // Радиус нашего круга
+//генерируем лампочки
+var container = document.getElementById("wrap");
+for (var i = 0; i < num; i++) {
   container.innerHTML += '<p class="circles"></p>';
 }
-let elemscollection = document.getElementsByClassName("circles");
 
-setInterval(function() {
-  for (let i = 0; i < elemscollection.length; i = i + 3) {
-    elemscollection[i].style.background = "red";
+$(document).ready(function Rect() {
+  for (i = 0; i < num; i++) {
+    var f = (2 / num) * i * Math.PI; // Рассчитываем угол каждой лампочки в радианах
+    var left = wrap + 2 * radius * Math.sin(f) - 15 + "px";
+    var top = wrap / 2 + radius * Math.cos(f) - 27 + "px";
+    $("#wrap p")
+      .eq(i)
+      .css({ top: top, left: left }); // Устанавливаем значения каждой лампочке
   }
-  for (let j = 1; j < elemscollection.length; j = j + 3) {
-    elemscollection[j].style.background = "yellow";
-  }
-  for (let k = 2; k < elemscollection.length; k = k + 3) {
-    elemscollection[k].style.background = "blue";
-  }
-}, 1000);
-setInterval(function() {
-  for (let i = 0; i < elemscollection.length; i = i + 3) {
-    elemscollection[i].style.background = "yellow";
-  }
-  for (let j = 1; j < elemscollection.length; j = j + 3) {
-    elemscollection[j].style.background = "blue";
-  }
-  for (let k = 2; k < elemscollection.length; k = k + 3) {
-    elemscollection[k].style.background = "red";
-  }
-}, 1100);
-setInterval(function() {
-  for (let i = 0; i < elemscollection.length; i = i + 3) {
-    elemscollection[i].style.background = "blue";
-  }
-  for (let j = 1; j < elemscollection2.length; j = j + 3) {
-    elemscollection[j].style.background = "red";
-  }
-  for (let k = 2; k < elemscollection.length; k = k + 3) {
-    elemscollection[k].style.background = "yellow";
-  }
-}, 1200);
+});
+
+//нажатие на кнопку
+$(document).ready(function() {
+  $("#button").click(function() {
+    $("#button").toggleClass("circle");
+    $("#wrap").toggleClass("circle");
+    $(document).ready(function Circle() {
+      for (i = 0; i < num; i++) {
+        var f = (2 / num) * i * Math.PI; // Рассчитываем угол каждой лампочки в радианах
+        var left = wrap / 2 + radius * Math.sin(f) - 15 + "px";
+        var top = wrap / 2 + radius * Math.cos(f) - 27 + "px";
+        $("#wrap p")
+          .eq(i)
+          .css({ top: top, left: left }); // Устанавливаем значения каждой лампочке
+      }
+    });
+
+    return false;
+  });
+});
+
